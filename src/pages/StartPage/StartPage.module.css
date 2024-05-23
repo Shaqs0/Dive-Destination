@@ -1,11 +1,55 @@
-.pic {
+.container .imageContainer {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.container .imageContainer .pic {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
-.pic img {
+.container .imageContainer .pic img {
   display: block;
   width: 100%;
   height: auto;
+}
+.container .imageContainer .textOverlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: var(--secondary-text-color);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+.container .destinations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: var(--font);
+  margin-left: 2rem;
+  margin-top: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .destinations img {
+  height: 550px;
+  width: 700px;
+}
+.container .destinations .top_text {
+  font-size: 24px;
+  font-weight: 600;
+}
+.container .destinations .text {
+  font-size: 18px;
+  font-weight: 500;
 }

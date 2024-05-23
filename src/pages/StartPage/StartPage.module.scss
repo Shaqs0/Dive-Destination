@@ -1,12 +1,59 @@
-.pic {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
+.container {
     
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
+
+    .imageContainer {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+
+        .pic {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+
+            & img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .textOverlay {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--secondary-text-color);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+        }
+    }
+
+    .destinations {
+        display: flex;
+        font-family: var(--font);
+        margin-left: 2rem;
+        margin-top: 4rem;
+        flex-direction: column;
+
+        & img {
+            height: 550px;
+            width: 700px;
+        }
+        .top_text {
+            font-size: 24px;
+            font-weight: 600;
+
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: 500;
+        }
     }
 }
