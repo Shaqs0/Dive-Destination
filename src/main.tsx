@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { StartPage } from './pages/StartPage/StartPage';
-import Layout from './layout/Layout/Layout';
+import { Layout } from './layout/Layout/Layout';
 
 const router = createBrowserRouter([
 	{
@@ -13,14 +13,11 @@ const router = createBrowserRouter([
 			{
 				path: '/start',
 				element: <StartPage/>,
-				children: [
-
-				]
+				children: []
 			},
 		]
 	},
 ]);
-
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
