@@ -14,8 +14,12 @@ html, body {
           flex-direction: column;
   min-height: 100vh;
 }
-
-.footer {
+.layout .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.layout .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +37,7 @@ html, body {
   width: 100%;
   margin-top: auto;
 }
-.footer p {
+.layout .footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,8 +49,7 @@ html, body {
           align-items: center;
   width: 200px;
 }
-
-.others {
+.layout .others {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,8 +63,7 @@ html, body {
   margin-top: 0.25rem;
   height: auto;
 }
-
-.icons {
+.layout .others .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,8 +74,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.name {
+.layout .others .name {
   color: var(--main-color);
   margin-top: 1rem;
   margin-bottom: 1.5rem;

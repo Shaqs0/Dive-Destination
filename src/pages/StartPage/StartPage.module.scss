@@ -1,59 +1,150 @@
-.container {
-    
+// * {
+//     outline: 1px solid black !important;
+//   }
+  
+  .container {
+    overflow-x: hidden;
+      .imageContainer {
+          text-align: center;
+          position: relative;
+          display: inline-block;
+          max-width: 100%;
+  
+          .pic {
+              display: block;
+              max-width: 100%;
+              height: auto;
+              margin: 0 auto;
+  
+              & img {
+                  display: block;
+                  width: 100%;
+                  height: auto;
+              }
+          }
+  
+          .textOverlay {
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: var(--secondary-text-color);
+              padding: 1rem;
+              border-radius: 8px;
+              text-align: center;
+              font-weight: 700;
+              font-size: 36px;
+          }
+      }
+  
+      .destinations {
+          display: flex;
+          font-family: var(--font);
+          margin-top: 4rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+           
+          .box {
+              .destination_button {
+                  display: flex;
+                  background-color: white;
+                  border-radius: 25px;
+                  padding-bottom: 20px;
+                  height: 500px;
+                  border: none;
+                  box-shadow: 1px 1px 10px rgb(80, 79, 79);
+                  margin-bottom: 2rem;
+              }
+          }
+  
+          & img {
+              margin-top: 1.5rem;
+              margin-right: 1rem;
+              height: 450px;
+              width: 600px;
+          }
+  
+          .top_text {
+              display: flex;
+              justify-content: center;
+              font-size: 26px;
+              font-weight: 600;
+          }
+  
+          .text {
+              display: flex;
+              font-size: 22px;
+              font-weight: 500;
+              flex-direction: column;
+              text-align: start;
+              width: 45em;
+              margin-right: 1rem;
+              margin-left: 1rem;
+  
+              & span {
+                  text-align: center;
+                  font-size: 24px;
+                  font-weight: 600;
+                  margin-bottom: 0.75rem;
+              }
+          }
+      }
+  }
+  
 
-    .imageContainer {
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        max-width: 100%;
-
-        .pic {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-
-            & img {
-                display: block;
-                width: 100%;
-                height: auto;
+@media (max-width: 1765px) {
+    .container {
+        .destinations {
+            .text {
+                width: 35em;
             }
         }
+    }
+}
 
-        .textOverlay {
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: var(--secondary-text-color);
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: 700;
-            font-size: 36px;
+
+@media (max-width: 1500px) {
+    .container {
+        .destinations {
+            .text {
+                width: 30em;
+            }
         }
     }
+}
 
-    .destinations {
-        display: flex;
-        font-family: var(--font);
-        margin-left: 2rem;
-        margin-top: 4rem;
-        flex-direction: column;
+@media (max-width: 1330px) {
+    .container {
+        .destinations {
+            & img {
+                margin-top: 1.5rem;
+                margin-right: 1rem;
+                height: 450px;
+                width: 500px;
+            }
 
-        & img {
-            height: 550px;
-            width: 700px;
+            .text {
+                width: 25em;
+            }
         }
-        .top_text {
-            font-size: 24px;
-            font-weight: 600;
+    }
+}
 
-        }
+@media (max-width: 1150px) {
+    .container {
+        .destinations {
+            & img {
+                margin-top: 1.5rem;
+                margin-right: 1rem;
+                height: 425px;
+                width: 475px;
+            }
 
-        .text {
-            font-size: 18px;
-            font-weight: 500;
+            .text {
+                font-size: 20px;
+                width: 22em;
+            }
         }
     }
 }
