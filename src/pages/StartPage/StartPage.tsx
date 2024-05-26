@@ -12,7 +12,7 @@ export function StartPage() {
 					<img src='public/big-1920.jpg' alt='Responsive Image' />
 				</picture>
 				<div className={styles['textOverlay']}>
-					Dive into a world of wonder and explore the breathtaking beauty beneath the waves with Dive Destinations
+					<p>Dive into a world of wonder and explore the breathtaking beauty beneath the waves with Dive Destinations</p>
 				</div>
 			</div>
 			<div className={styles['destinations']}>
@@ -29,8 +29,7 @@ export function StartPage() {
 						</picture>
 					</button>
 					<button className={styles['destination_button']}>
-						<p className={styles['text']}><span>The Blue Hole, Belize</span>
-The Blue Hole, located off the coast of Belize, is a world-renowned diving site famous for its stunning natural beauty and unique geological formations. This underwater sinkhole measures approximately 300 meters across and 125 meters deep, featuring crystal-clear blue waters that attract divers from around the globe. Divers can explore its depths and encounter fascinating marine life, including various species of fish, sharks, and coral formations. The Blue Hole offers an unforgettable diving experience, providing divers with the opportunity to witness its mesmerizing underwater scenery and vibrant ecosystem.</p>
+						<p className={styles['text']}><span>The Blue Hole, Belize</span>The Blue Hole, located off the coast of Belize, is a world-renowned diving site famous for its stunning natural beauty and unique geological formations. This underwater sinkhole measures approximately 300 meters across and 125 meters deep, featuring crystal-clear blue waters that attract divers from around the globe. Divers can explore its depths and encounter fascinating marine life, including various species of fish, sharks, and coral formations. The Blue Hole offers an unforgettable diving experience, providing divers with the opportunity to witness its mesmerizing underwater scenery and vibrant ecosystem.</p>
 						<picture className={styles['img']}>
 							<source
 								srcSet='public/blue_holl.png 1920w'
