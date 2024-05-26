@@ -36,6 +36,16 @@
   font-weight: 700;
   font-size: 36px;
 }
+.container .imageContainer .textOverlay .btn {
+  font-family: var(--font);
+  font-size: 18px;
+  background-color: white;
+  color: black;
+}
+.container .imageContainer .textOverlay .btn:hover {
+  background-color: rgb(185, 185, 185);
+  color: white;
+}
 .container .destinations {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +127,10 @@
   }
 }
 @media (max-width: 1330px) {
+  .container .imageContainer .textOverlay {
+    top: 35%;
+    left: 49%;
+  }
   .container .destinations img {
     margin-top: 1.5rem;
     margin-right: 1rem;
@@ -128,14 +142,12 @@
   }
 }
 @media (max-width: 1180px) {
+  .container .imageContainer .textOverlay {
+    top: 35%;
+    left: 50%;
+    font-size: 31px;
+  }
   .container .destinations .box .destination_button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: white;
-    border-radius: 25px;
-    padding-bottom: 20px;
-    border: none;
     -webkit-box-shadow: 1px 1px 10px rgb(80, 79, 79);
             box-shadow: 1px 1px 10px rgb(80, 79, 79);
     margin-bottom: 2rem;
@@ -153,18 +165,17 @@
   }
 }
 @media (max-width: 1000px) {
+  .container .imageContainer .textOverlay {
+    font-size: 28px;
+  }
+  .container .imageContainer .btn {
+    width: 180px;
+    height: 55px;
+    font-size: 16px;
+  }
   .container .destinations .box .destination_button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: white;
-    border-radius: 25px;
-    padding-bottom: 20px;
-    border: none;
-    -webkit-box-shadow: 1px 1px 10px rgb(80, 79, 79);
-            box-shadow: 1px 1px 10px rgb(80, 79, 79);
     margin-bottom: 2rem;
-    margin-left: -1.5rem;
+    margin-left: 0.25rem;
   }
   .container .destinations img {
     margin-top: 2rem;
@@ -177,28 +188,93 @@
     width: 20em;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 870px) {
   .container .destinations .box .destination_button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: white;
-    border-radius: 25px;
-    padding-bottom: 20px;
-    border: none;
-    -webkit-box-shadow: 1px 1px 10px rgb(80, 79, 79);
-            box-shadow: 1px 1px 10px rgb(80, 79, 79);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 2rem;
-    margin-left: -1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .container .destinations img {
-    margin-top: 3.5rem;
-    margin-right: 1rem;
-    height: 125px;
-    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0.75rem;
+    margin-right: 0rem;
+    height: 350px;
+    width: 425px;
+    float: left;
   }
   .container .destinations .text {
     font-size: 16px;
-    width: 18em;
+    width: auto;
+    text-align: justify;
+  }
+}
+@media (max-width: 800px) {
+  .container .imageContainer .textOverlay {
+    top: 45%;
+    left: 50%;
+    font-size: 28px;
+  }
+  .container .destinations .box .destination_button {
+    margin-bottom: 2rem;
+    margin-left: 0.75rem;
+  }
+}
+@media (max-width: 680px) {
+  .container .imageContainer .textOverlay {
+    top: 45%;
+    left: 50%;
+    font-size: 24px;
+  }
+  .container .imageContainer .textOverlay .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .container .destinations .box .destination_button {
+    margin-bottom: 2rem;
+    margin-left: 0.75rem;
+  }
+  .container .destinations .box .destination_button img {
+    margin-top: 0.75rem;
+    margin-right: 0rem;
+    height: 400px;
+    width: 425px;
+  }
+}
+@media (max-width: 570px) {
+  .container .imageContainer .textOverlay {
+    top: 45%;
+    left: 50%;
+    font-size: 20px;
+  }
+  .container .imageContainer .textOverlay .btn {
+    width: 130px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .container .destinations .top_text {
+    font-size: 24px;
+  }
+  .container .destinations .box .destination_button {
+    margin-bottom: 2rem;
+    margin-left: 0.75rem;
+  }
+  .container .destinations .box .destination_button img {
+    margin-top: 0.75rem;
+    margin-right: 0rem;
+    height: 400px;
+    width: 425px;
   }
 }

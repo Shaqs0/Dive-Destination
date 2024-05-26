@@ -34,6 +34,18 @@
               text-align: center;
               font-weight: 700;
               font-size: 36px;
+
+              .btn {
+                font-family: var(--font);
+                font-size: 18px;
+                background-color: white;
+                color: black;
+
+                &:hover {
+                    background-color: rgb(185, 185, 185);
+                    color: white;
+                }
+              }
           }
       }
   
@@ -118,6 +130,14 @@
 
 @media (max-width: 1330px) {
     .container {
+        .imageContainer {
+            .textOverlay {
+                top: 35%;
+                left: 49%;
+            }
+        }
+
+
         .destinations {
             & img {
                 margin-top: 1.5rem;
@@ -135,16 +155,18 @@
 
 @media (max-width: 1180px) {
     .container {
+        .imageContainer {
+            .textOverlay {
+                top: 35%;
+                left: 50%;
+                font-size: 31px;
+            }
+        }
 
         .destinations {
 
             .box {
                 .destination_button {
-                    display: flex;
-                    background-color: white;
-                    border-radius: 25px;
-                    padding-bottom: 20px;
-                    border: none;
                     box-shadow: 1px 1px 10px rgb(80, 79, 79);
                     margin-bottom: 2rem;
                     margin-left: 1.5rem;
@@ -168,19 +190,23 @@
 
 @media (max-width: 1000px) {
     .container {
+        .imageContainer {
+            .textOverlay {
+                font-size: 28px;
+            }
 
+            .btn {
+                width: 180px;
+                height: 55px;
+                font-size: 16px;
+            }
+        }
         .destinations {
 
             .box {
                 .destination_button {
-                    display: flex;
-                    background-color: white;
-                    border-radius: 25px;
-                    padding-bottom: 20px;
-                    border: none;
-                    box-shadow: 1px 1px 10px rgb(80, 79, 79);
                     margin-bottom: 2rem;
-                    margin-left: -1.5rem;
+                    margin-left: 0.25rem;
                 }
             }
 
@@ -199,35 +225,129 @@
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 870px) {
     .container {
+        .destinations {
+            .box {
+                .destination_button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            & img {
+                display: flex;
+                margin-top: 0.75rem;
+                margin-right: 0rem;
+                height: 350px;
+                width: 425px;
+                float: left; 
+            }
+
+            .text {
+                font-size: 16px;
+                width: auto;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        .imageContainer {
+            .textOverlay {
+                top: 45%;
+                left: 50%;
+                font-size: 28px;
+            }
+        }
+
+        .destinations {
+            .box {
+                .destination_button {
+                    margin-bottom: 2rem;
+                    margin-left: 0.75rem;
+                }
+            }
+        }
+    }
+} 
+
+@media (max-width: 680px) {
+    .container {
+        .imageContainer {
+            .textOverlay {
+                top: 45%;
+                left: 50%;
+                font-size: 24px;
+
+                .btn {
+                    width: 150px;
+                    height: 50px;
+                    font-size: 16px;
+                }
+            }
+        }
 
         .destinations {
 
             .box {
                 .destination_button {
-                    display: flex;
-                    background-color: white;
-                    border-radius: 25px;
-                    padding-bottom: 20px;
-                    border: none;
-                    box-shadow: 1px 1px 10px rgb(80, 79, 79);
                     margin-bottom: 2rem;
-                    margin-left: -1.5rem;
+                    margin-left: 0.75rem;
+
+                    & img {
+                        margin-top: 0.75rem;
+                        margin-right: 0rem;
+                        height: 400px;
+                        width: 425px;
+                    }
                 }
-            }
-
-            & img {
-                margin-top: 3.5rem;
-                margin-right: 1rem;
-                height: 125px;
-                width: 150px;
-            }
-
-            .text {
-                font-size: 16px;
-                width: 18em;
             }
         }
     }
 }
+
+@media (max-width: 570px) {
+    .container {
+        .imageContainer {
+            .textOverlay {
+                top: 45%;
+                left: 50%;
+                font-size: 20px;
+
+                .btn {
+                    width: 130px;
+                    height: 45px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .destinations {
+
+            .top_text {
+                font-size: 24px;
+            }
+
+            .box {
+                .destination_button {
+                    margin-bottom: 2rem;
+                    margin-left: 0.75rem;
+
+                    & img {
+                        margin-top: 0.75rem;
+                        margin-right: 0rem;
+                        height: 400px;
+                        width: 425px;
+                    }
+                }
+            }
+        }
+    }
+} 
