@@ -18,7 +18,7 @@ export function StartPage() {
 				</div>
 			</div>
 			<div className={styles['destinations']}>
-				<p className={styles['top_text']}>Discover Our Top Destinations:</p>
+				<p className={styles['top_text']}>Discover Our Top Destinations</p>
 				<div className={styles['box']}>
 					<button className={styles['destination_button']}>
 						<p className={styles['text']}><span>The Great Barrier Reef</span> The Great Barrier Reef is the world's largest coral reef system, stretching over 2,300 kilometers along the northeast coast of Australia. It is composed of over 2,900 individual reefs and 900 islands, making it one of the most diverse ecosystems on the planet. The reef is renowned for its stunning biodiversity, housing thousands of species of marine life, including colorful coral, fish, turtles, sharks, and rays. It is a UNESCO World Heritage Site and attracts millions of tourists each year for snorkeling, scuba diving, and marine exploration.</p>

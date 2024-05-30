@@ -93,7 +93,7 @@ html, body {
   }
 }
 @media (max-width: 400px) {
-  .footer {
-    font-size: 10px;
+  .footer p {
+    font-size: 12px;
   }
 }
