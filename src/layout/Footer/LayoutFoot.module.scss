@@ -61,17 +61,11 @@ html, body {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .footer {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 400px) {
-  .footer {
-    p {
-    font-size: 12px;
-   }
+    & p {
+      font-size: 12px;
+    }
   }
 }
 
