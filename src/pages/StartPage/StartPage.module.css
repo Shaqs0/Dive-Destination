@@ -236,6 +236,9 @@
     height: 50px;
     font-size: 16px;
   }
+  .container .destinations .text {
+    font-size: 18px;
+  }
   .container .destinations .box .destination_button img {
     margin-top: 0.75rem;
     margin-right: 0rem;
@@ -254,6 +257,9 @@
   .container .destinations .top_text {
     font-size: 24px;
   }
+  .container .destinations .text {
+    font-size: 17px;
+  }
 }
 @media (max-width: 490px) {
   .container .imageContainer .textOverlay {
@@ -266,6 +272,9 @@
   }
   .container .destinations .top_text {
     font-size: 24px;
+  }
+  .container .destinations .text {
+    font-size: 16px;
   }
   .container .destinations .box .destination_button {
     margin-bottom: 2rem;
@@ -290,8 +299,11 @@
   .container .destinations .top_text {
     font-size: 21px;
   }
+  .container .destinations .text {
+    font-size: 14px;
+  }
   .container .destinations .box .destination_button img {
-    height: 310px;
+    height: 250px;
     width: 340px;
   }
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import styles from './StartPage.module.css';
 
@@ -14,7 +15,11 @@ export function StartPage() {
 				</picture>
 				<div className={styles['textOverlay']}>
 					<p>Dive into a world of wonder and explore the breathtaking beauty beneath the waves with Dive Destinations</p>
-					<Button appearence='small' className={styles['btn']}>Start diving</Button>
+					<Link to="/registration">
+						<Button appearence='small' className={styles['btn']}>
+							Start diving
+						</Button>
+					</Link>
 				</div>
 			</div>
 			<div className={styles['destinations']}>

@@ -289,6 +289,10 @@
 
         .destinations {
 
+            .text {
+                font-size: 18px;
+            }
+
             .box {
                 .destination_button {
                     & img {
@@ -319,6 +323,10 @@
             .top_text {
                 font-size: 24px;
             }
+            
+            .text {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -340,6 +348,10 @@
 
             .top_text {
                 font-size: 24px;
+            }
+
+            .text {
+                font-size: 16px;
             }
 
             .box {
@@ -380,10 +392,14 @@
                 font-size: 21px;
             }
 
+            .text {
+                font-size: 14px;
+            }
+
             .box {
                 .destination_button {
                     & img {
-                        height: 310px;
+                        height: 250px;
                         width: 340px;
                     }
                 }
