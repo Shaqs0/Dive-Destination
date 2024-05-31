@@ -2,17 +2,26 @@
     display: flex;
     height: 65px;
     align-items: center;
-    border-bottom: 1px solid var(--blue-color);
     width: 100%;
     
-    .name {
-        font-family: var(--font);
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 22.5px;
-        letter-spacing: -0.27px;
-        margin-left: 7rem;
+
+    .link {
+        text-decoration: none;
+        
+        .name {
+            font-family: var(--font);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22.5px;
+            letter-spacing: -0.27px;
+            margin-left: 7rem;
+        }
+
+        &:visited {
+            color: black;
+            text-decoration: none;
+        }
     }
 
     .other {

@@ -1,3 +1,7 @@
+* {
+  border: 1px black !important;
+}
+
 .container {
   overflow-x: hidden;
 }
@@ -68,8 +72,8 @@
   padding-bottom: 20px;
   height: auto;
   border: none;
-  -webkit-box-shadow: 1px 1px 10px rgb(80, 79, 79);
-          box-shadow: 1px 1px 10px rgb(80, 79, 79);
+  -webkit-box-shadow: 1px 1px 5px rgb(168, 168, 168);
+          box-shadow: 1px 1px 5px rgb(168, 168, 168);
   margin-bottom: 2rem;
 }
 .container .destinations img {

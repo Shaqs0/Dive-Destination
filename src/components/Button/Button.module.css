@@ -1,7 +1,22 @@
 .small {
+  font-family: var(--font);
   width: 200px;
   height: 60px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+}
+
+.big {
+	font-family: var(--font);
+	cursor: pointer;
+	transition: background 0.25s;
+	border: none;
+	color: black;
+	border-radius: 29px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 20px 60px;
+	box-shadow: 0px 10px 40px 0px rgba(122, 129, 190, 0.16);
 }

@@ -6,10 +6,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid var(--blue-color);
   width: 100%;
 }
-.top .name {
+.top .link {
+  text-decoration: none;
+}
+.top .link .name {
   font-family: var(--font);
   font-size: 18px;
   font-style: normal;
@@ -17,6 +19,10 @@
   line-height: 22.5px;
   letter-spacing: -0.27px;
   margin-left: 7rem;
+}
+.top .link:visited {
+  color: black;
+  text-decoration: none;
 }
 .top .other {
   color: var(--main-color);
