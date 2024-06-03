@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 13rem;
+    margin-top: 11rem;
     flex-direction: column;
 
     .error_code {
@@ -21,13 +21,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 15rem;
+        margin-top: 25rem;
     }
 
     .go_back {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
+        width: 300px;
+
+        &:hover {
+            color: white;
+            background-color: var(--blue-color)
+        }
     }
 }
