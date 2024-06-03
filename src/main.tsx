@@ -6,6 +6,8 @@ import { StartPage } from './pages/StartPage/StartPage';
 import { Layout } from './layout/Layout/Layout';
 import { RegistrationPage } from './pages/RegistrationPage/RegistrationPage';
 import { MainPage } from './pages/MainPage/MainPage';
+import { LoginPage } from './pages/LoginPage/LoginPage';
+import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
 	{
@@ -23,9 +25,17 @@ const router = createBrowserRouter([
 		],
 	},
 	{
-		path: '/registration',
+		path: '/auth/registration',
 		element: <RegistrationPage/>
 	},
+	{
+		path: '/auth/login',
+		element: <LoginPage/>
+	},
+	{
+		path: '*',
+		element: <ErrorPage/>
+	}
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

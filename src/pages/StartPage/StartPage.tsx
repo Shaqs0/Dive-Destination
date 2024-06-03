@@ -15,7 +15,7 @@ export function StartPage() {
 				</picture>
 				<div className={styles['textOverlay']}>
 					<p>Dive into a world of wonder and explore the breathtaking beauty beneath the waves with Dive Destinations</p>
-					<Link to="/registration">
+					<Link to="/auth/registration">
 						<Button appearence='small' className={styles['btn']}>
 							Start diving
 						</Button>
