@@ -8,6 +8,8 @@ import { RegistrationPage } from './pages/RegistrationPage/RegistrationPage';
 import { MainPage } from './pages/MainPage/MainPage';
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 const router = createBrowserRouter([
 	{
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
 		element: <LoginPage/>
 	},
 	{
+		path: '/MainPage',
+		element: <MainPage/>
+	},
+	{
 		path: '*',
 		element: <ErrorPage/>
 	}
@@ -40,6 +46,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<Provider store={store}>
+			<RouterProvider router={router} />
+		</Provider>
 	</React.StrictMode>,
 );

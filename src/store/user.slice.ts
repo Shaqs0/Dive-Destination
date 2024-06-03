@@ -27,7 +27,7 @@ const initialState: UserState = {
 export const login = createAsyncThunk('user/login',
 	async (params: {email: string, password: string}) => {
 		try {
-			const { data } = await axios.post<LoginResponse>(`${PREFIX}/auth/login`, {
+			const { data } = await axios.post<LoginResponse>(`${PREFIX}/api/authorization/user/`, {
 				email: params.email,
 				password: params.password
 			});
@@ -40,10 +40,10 @@ export const login = createAsyncThunk('user/login',
 	}
 );
 
-export const register = createAsyncThunk('user/register',
+export const register = createAsyncThunk('user/registration',
 	async (params: {email: string, password: string, name: string}) => {
 		try {
-			const { data } = await axios.post<LoginResponse>(`${PREFIX}/auth/register`, {
+			const { data } = await axios.post<LoginResponse>(`${PREFIX}/api/registration/user`, {
 				email: params.email,
 				password: params.password,
 				name: params.name
