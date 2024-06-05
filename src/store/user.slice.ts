@@ -27,7 +27,7 @@ const initialState: UserState = {
 export const login = createAsyncThunk('user/login',
 	async (params: {email: string, password: string}) => {
 		try {
-			const { data } = await axios.post<LoginResponse>(`${PREFIX}/api/authorization/user/`, {
+			const { data } = await axios.post<LoginResponse>(`${PREFIX}/api/authorization/user/?login=${params.email}&password=${params.password}`, {
 				email: params.email,
 				password: params.password
 			});

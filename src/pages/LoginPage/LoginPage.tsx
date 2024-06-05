@@ -6,7 +6,7 @@ import styles from './LoginPage.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispath, RootState } from '../../store/store';
 import { FormEvent, useEffect } from 'react';
-import { login, userActions } from '../../store/user.slice';
+import { login, userActions} from '../../store/user.slice';
 
 export type LoginForm = {
 	email: {
@@ -38,7 +38,7 @@ export function LoginPage () {
 
 	const sendLogin = async (email: string, password: string) => {
 		dispatch(login({email, password}));
-	};
+	};  
 
 	return (
 		<div>
