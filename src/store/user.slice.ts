@@ -43,7 +43,7 @@ export const login = createAsyncThunk('user/login',
 export const register = createAsyncThunk('user/registration',
 	async (params: {email: string, password: string, name: string}) => {
 		try {
-			const { data } = await axios.post<LoginResponse>(`${PREFIX}/api/registration/user`, {
+			const { data } = await axios.post<LoginResponse>(`${PREFIX}/api/registration/user?name=${params.name}&login=${params.email}&${params.password}`, {
 				email: params.email,
 				password: params.password,
 				name: params.name

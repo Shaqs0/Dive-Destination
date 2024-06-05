@@ -10,6 +10,7 @@ import { LoginPage } from './pages/LoginPage/LoginPage';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import { RequireAuth } from './helpers/RequireAuth';
 
 const router = createBrowserRouter([
 	{
@@ -19,10 +20,9 @@ const router = createBrowserRouter([
 				path: '/',
 				element: <StartPage />,
 			},
-
 			{
 				path: '/MainPage',
-				element: <MainPage/>	
+				element: <RequireAuth><MainPage/></RequireAuth>
 			}
 		],
 	},
@@ -33,10 +33,6 @@ const router = createBrowserRouter([
 	{
 		path: '/auth/login',
 		element: <LoginPage/>
-	},
-	{
-		path: '/MainPage',
-		element: <MainPage/>
 	},
 	{
 		path: '*',
