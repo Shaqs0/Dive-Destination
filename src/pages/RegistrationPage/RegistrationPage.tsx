@@ -5,8 +5,10 @@ import Input from '../../components/Input/Input';
 import styles from '../LoginPage/LoginPage.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispath, RootState } from '../../store/store';
-import { FormEvent, useEffect } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { register, userActions } from '../../store/user.slice';
+import showIcon from '/public/view_icon.svg';
+import hideIcon from '/public/view_hide_icon.svg';
 
 export type RegisterForm = {
 	email: {
@@ -26,8 +28,13 @@ export type RegisterForm = {
 export function RegistrationPage() {
 	const navigate = useNavigate();
 	const dispatch = useDispatch<AppDispath>();
+	const [showPassword, setShowPassword] = useState(false);
 	const { jwt, registerErrorMessage } = useSelector((s: RootState) => s.user);
 
+
+	const togglePasswordVisibility = () => {
+		setShowPassword(prevState => !prevState);
+	};
 
 	useEffect (() => {
 		if (jwt) {
@@ -52,12 +59,22 @@ export function RegistrationPage() {
 					<label htmlFor='email'>Email Address</label>
 					<Input id='email' name='email' placeholder='Email' autoComplete="current-email"></Input>
 				</div>
-				<div className={styles['field']}>
-					<label htmlFor='password'>Password</label>
-					<Input id='password' name='password' type='password' placeholder='Password' autoComplete="current-password"></Input>
+				<div className={styles['password_container']}>
+					<div className={styles['field']}>
+						<label htmlFor='password'>Password</label>
+						<div className={styles['inpt_pswrd']}>
+							<Input id='password' name='password' type={showPassword ? 'text' : 'password'} placeholder='Password' autoComplete="current-password" />
+							<img 
+								src={showPassword ? hideIcon : showIcon} 
+								alt={showPassword ? 'Hide password' : 'Show password'} 
+								onClick={togglePasswordVisibility} 
+								className={styles['toggleIcon']} 
+							/>
+						</div>
+					</div>
 				</div>
 				<div className={styles['field']}>
-					<label htmlFor='password'>First Name</label>
+					<label htmlFor='name'>First Name</label>
 					<Input id='name' name='name' placeholder='Name' autoComplete="current-name"></Input>
 				</div>
 				<Button appearence='big'>Sign Up</Button>

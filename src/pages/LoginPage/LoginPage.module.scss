@@ -17,6 +17,31 @@
             flex-direction: column;
             gap: 5px;
 
+            .inpt_pswrd {
+                display: flex;
+                position: relative;
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    padding-right: 40px; /* Adjust padding to prevent text overlap with icon */
+                }
+
+                .toggleIcon {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
             & label {
                 color: #C4C4C4;
                 font-size: 17px;
@@ -41,6 +66,10 @@
                 color: var(--main-color);
             }
         }
+    }
+
+    .password_container {
+        display: flex;
     }
 
     .error {
